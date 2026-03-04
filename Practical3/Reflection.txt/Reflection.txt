@@ -1,3 +1,0 @@
-In this practical, everything goes well.
-At first, getting familiar with Visual Studio Code is challenging because everything is different from what I used formerly.
-However, I don't have any questions now. Everything is OK.
