@@ -11,3 +11,10 @@ X = True
 Y = False
 W = X or Y
 print (W)
+
+# Population growth is decelerating in Scotland
+# Truth table for W 
+# X = True , Y = False -> W = True
+# X = True , Y = Flase -> W = True
+# X = False , Y = True -> W = True
+# X = False , Y = False -> W = False
