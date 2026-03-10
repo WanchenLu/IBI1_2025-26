@@ -15,4 +15,6 @@ elif Cr <= 0 or Cr >= 100 :
 elif gender not in ["male","female"] :
     print ("gender needs corrected")
 else :
+    if gender == "female" :
+        CrCl = CrCl*0.85
     print (CrCl)
