@@ -11,6 +11,7 @@ plt.ylabel('Expression')
 plt.title('Expression values of genes')
 plt.xticks(ind,gene_names)
 plt.yticks(range(0,21,3))
+plt.bar_label(pl,fmt='%.1f')
 plt.show()
 # Here is the variable
 interest = 'TP53' #
