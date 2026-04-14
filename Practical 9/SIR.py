@@ -9,6 +9,7 @@ gamma = 0.05
 S_array = [Susceptible]
 I_array = [Infected]
 R_array = [Recovered]
+#need: each loop: the sum of recovery ones & ones from susceptible to infected -> randomly whether an infected one recovered & randomly whether a susceptible one infected
 for i in range(1000):
     recovery = np.random.choice(range(2),Infected,p=[1-gamma,gamma]).sum()
     S_I = np.random.choice(range(2),Susceptible,p=[1-beta*Infected/N,beta*Infected/N]).sum()
@@ -26,4 +27,4 @@ plt.plot(S_array,label="susceptible")
 plt.plot(I_array,label="infected")
 plt.plot(R_array,label="recovered")
 plt.legend()
-plt.savefig("SIR.png")
+plt.show()
