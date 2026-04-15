@@ -1,10 +1,16 @@
+# import necessary libraries
 import numpy as np 
 import matplotlib.pyplot as plt
+# make array of all susceptible population
 population = np.zeros((100,100))
+# choose one random point in array for where the outbreak happens
 outbreak = np.random.choice(range(100),2)
+#change status for 0 to 1
 population[outbreak[0],outbreak[1]] = 1
+# set up model parameters
 beta = 0.3
 gamma = 0.05
+# loop through 100 time points
 for j in range(100):
     # find infected points
     infectedIndex = np.where(population==1)
@@ -24,8 +30,11 @@ for j in range(100):
                         # only infect neighbours that are not already infected!
                         if population[xNeighbour,yNeighbour]==0:
                             population[xNeighbour,yNeighbour]=np.random.choice(range(2),1,p=[1-beta,beta])[0]
+        # an infected individual can recover at rate gamma
         population[x, y] = np.random.choice([2, 1], p=[gamma, 1 - gamma])
+    # a heat map for each time point
     if j % 10 == 0 or j == 99:
+        # plot
         plt.figure(figsize=(6,4),dpi=150)
         plt.imshow(population,cmap="viridis",interpolation="nearest")
         plt.show()
