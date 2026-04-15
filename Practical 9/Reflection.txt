@@ -1,0 +1,26 @@
+This practical was a very helpful hands-on introduction to stochastic SIR models and their extensions. 
+Overall, I found it challenging but rewarding, especially seeing how small changes in parameters or population structure can lead to very different outbreak trajectories.
+
+What was easy / hard?
+Setting up the basic SIR model in SIR.py was relatively straightforward. 
+Defining the parameters, arrays, and the time loop made sense after writing the pseudocode. 
+The trickiest part was correctly implementing the infection probability — remembering to multiply beta by the proportion of infected individuals took a moment to grasp.
+The vaccination extension (SIR_vaccination.py) was easy to add once the base model worked. 
+Looping over different vaccination percentages and plotting the results helped me clearly see the herd immunity threshold around 70–80% for the given parameters.
+The 2D spatial model (spatial_SIR.py) was definitely the hardest part. 
+Handling neighbour infections, especially at the boundaries of the grid, required careful thought. 
+Using np.where() to find infected cells and looping over their neighbours was initially confusing, but the provided snippet helped me understand the logic. 
+Getting recovery to work alongside infection without affecting the same time step’s newly infected individuals was a good lesson in state updates.
+
+What I enjoyed most / least?
+I really enjoyed visualising the disease spread in 2D — watching the infection ripple outwards from a single point and then slowly turn into recovery was fascinating. 
+It made the concept of spatial structure very tangible.
+I enjoyed the stochastic nature less when debugging, because running the same code twice gave different results, making it hard to tell if a change actually fixed a bug or just produced a different random outcome. 
+However, I understand that this is exactly the point of probabilistic modelling.
+
+Most important thing I learned
+The most important takeaway for me was that simple probabilistic rules (beta, gamma) can produce complex and realistic epidemic dynamics. 
+I also gained a much better intuition for herd immunity: even without vaccinating everyone, reducing the number of susceptible individuals below a threshold can stop the disease from spreading. 
+In the 2D model, I learned how local interactions matter — a well-mixed assumption can overestimate spread compared to a spatial grid where infection only reaches neighbours.
+
+Overall, this practical bridged theory and code nicely, and I now feel more confident implementing agent‑based or grid‑based epidemiological models in Python.
