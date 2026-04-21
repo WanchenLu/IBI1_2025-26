@@ -1,0 +1,7 @@
+What was the distribution of DALYs across countries which have top 10 DALYs in 2019?
+line number: 26
+Discussion:
+The pie chart reveals a relatively even distribution of DALY rates among the top 10 countries in 2019, ranging from 8.6% to 13.2%, with Lesotho and the Central African Republic contributing the highest shares. 
+This pattern aligns with expectations, as all ten nations are low-income countries, predominantly in Sub-Saharan Africa, that face compounded public health challenges. 
+The elevated DALY rates are likely driven by limited healthcare infrastructure, high burdens of infectious diseases (e.g., HIV/AIDS, malaria, tuberculosis), maternal and child mortality, and socioeconomic or political instability. 
+Since DALYs combine years of life lost to premature death and years lived with disability, these systemic factors collectively sustain high morbidity and mortality, resulting in the observed disease burden distribution.
