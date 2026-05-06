@@ -21,8 +21,9 @@ category = {'low':low,'normal':normal,'high':high}
 max_category = max(category,key=category.get)
 print (max_category," contains the largest number of patients")
 import matplotlib.pyplot as plt
-labels = [f'low{low}',f'normal{normal}',f'high{high}']
+labels = ['low','normal','high']
 sizes = [low,normal,high]
-plt.pie(sizes,labels=labels,autopct='%1.1f%%',startangle=90)
+plt.pie(sizes,labels=labels,autopct=lambda pct: f'{pct:.1f}% ({int(pct / 100 * patients)})',startangle=90)
+plt.title('Number of patients in each category')
 plt.axis('equal')
 plt.show()
