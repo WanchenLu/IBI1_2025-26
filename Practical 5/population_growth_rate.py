@@ -15,6 +15,7 @@ changes_each = [item[1] for item in changes]
 pl = plt.bar(ind,changes_each,width=0.35)
 plt.axhline(y=0,color='gray',linestyle='--',linewidth=1)
 plt.ylabel("Changes(%)")
+plt.xlabel('Countries')
 plt.title("The population changes for contries")
 plt.xticks(ind,countries)
 plt.yticks(range(-2,4,1))
