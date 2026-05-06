@@ -1,0 +1,38 @@
+Dear IBI1 Course Team,
+
+Thank you for the detailed formative feedback on Practicals 3, 4, and 5. 
+I have revised my scripts as suggested. 
+Here is a summary of every change I made.
+
+Week 4 Feedback:
+
+1. infection.py was empty – the code was in another file.
+    I moved the infection simulation into infection.py. 
+    The file now runs the complete script that calculates and prints the number of infected students each day until all 91 are infected.
+
+2. infection.py had limited pseudocode – the feedback asked for comments explaining the variables.
+    I added pseudocode comments throughout infection.py. 
+    Each variable (initial_infected, growth_rate, total_students, days) now has a descriptive comment, and the loop logic is explained step‑by‑step.
+
+3. mystery_code.py – I used the word "summary" instead of "sum".
+   → I corrected line 2 to read: "Answer: Calculates the sum of 11 random numbers generated between 1 and 10."
+
+4. creatine_clearance.py was empty – the code was in another file.
+   → I moved the calculation into creatine_clearance.py so the file contains the working script.
+
+5. creatine_clearance.py omitted the print statement for males – only the female result was shown.
+   → I added the missing print statement. 
+   The script now correctly displays CrCl for both male and female genders.
+
+Week 5 Feedback:
+
+6. Gene expression bar chart – missing x‑axis label.
+   → I added an x‑axis label ("Genes") to the bar chart in the gene expression script.
+
+7. Heart rate pie chart – the feedback suggested: include a title, show only the category names in the labels, and display count values on the chart rather than in the category names.
+   → I added a title ("Distribution of Heart Rate Categories"), simplified the labels to "Low", "Normal", and "High", and used autopct to show both the percentage and the count on each pie slice.
+
+8. Population growth bar chart – missing x‑axis label.
+   → I added an x‑axis label ("Country") to the bar chart in the population growth script.
+
+All these changes have been committed and pushed. Thank you again for the constructive feedback.
