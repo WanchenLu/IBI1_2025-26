@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer: the code generates 11 intergers between [1,10] randomly and outputs their summary
+# Answer: the code generates 11 intergers between [1,10] randomly and outputs their sum
 
 # Import libraries
 # randint allows drawing a random number,
