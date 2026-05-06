@@ -8,6 +8,7 @@ ind = list(range(len(gene_names)))
 width = 0.35
 pl = plt.bar(ind,expression,width)
 plt.ylabel('Expression')
+plt.xlabel('Gene')
 plt.title('Expression values of genes')
 plt.xticks(ind,gene_names)
 plt.yticks(range(0,21,3))
