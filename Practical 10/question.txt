@@ -1,5 +1,5 @@
 What was the distribution of DALYs across countries which have top 10 DALYs in 2019?
-line number: 26
+line number: 29
 Discussion:
 The pie chart reveals a relatively even distribution of DALY rates among the top 10 countries in 2019, ranging from 8.6% to 13.2%, with Lesotho and the Central African Republic contributing the highest shares. 
 This pattern aligns with expectations, as all ten nations are low-income countries, predominantly in Sub-Saharan Africa, that face compounded public health challenges. 
