@@ -15,6 +15,6 @@ print (W)
 # Population growth is decelerating in Scotland
 # Truth table for W 
 # X = True , Y = True -> W = True
-# X = True , Y = Flase -> W = True
+# X = True , Y = False -> W = True
 # X = False , Y = True -> W = True
 # X = False , Y = False -> W = False
