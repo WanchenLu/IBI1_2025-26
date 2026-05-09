@@ -1,6 +1,16 @@
 # import necessary libraries
 import numpy as np 
 import matplotlib.pyplot as plt
+# 1. Create 100x100 grid of susceptible (0)
+# 2. Pick one random cell, set to infected (1)
+# 3. FOR each of 100 time steps:
+#    a. Find all infected cells
+#    b. FOR each infected cell:
+#       - For each of its 8 neighbours:
+#            if neighbour is susceptible (0):
+#                infect it with probability beta
+#       - The infected cell recovers (2) with probability gamma
+#    c. Every 10 steps (and at final step), plot a heatmap
 # make array of all susceptible population
 population = np.zeros((100,100))
 # choose one random point in array for where the outbreak happens
@@ -10,6 +20,10 @@ population[outbreak[0],outbreak[1]] = 1
 # set up model parameters
 beta = 0.3
 gamma = 0.05
+plt.figure(figsize=(6,4), dpi=150)
+plt.imshow(population, cmap='viridis', interpolation='nearest')
+plt.title("Time 0")
+plt.show()
 # loop through 100 time points
 for j in range(100):
     # find infected points
