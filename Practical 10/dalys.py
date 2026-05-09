@@ -18,7 +18,7 @@ largest_country = largest_row.Entity.iloc[0]
 smallest_country = smallest_row.Entity.iloc[0]
 print(smallest_country," reported the smallest DALYs values in the most recent year for which data are available (2019)")
 print(largest_country," reported the largest DALYs values in the most recent year for which data are available (2019)")
-# the maxium name is Lesotho, the minimum name is Singapore.
+# the maximum name is Lesotho, the minimum name is Singapore.
 singapore = dalys_data.loc[dalys_data.Entity == "Singapore"]
 plt.plot(singapore.Year,singapore.DALYs,'b+')
 plt.xticks(singapore.Year,rotation=-90)
