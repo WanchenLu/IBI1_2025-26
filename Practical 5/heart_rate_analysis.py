@@ -16,7 +16,7 @@ for e in heart_rates :
         normal += 1
     else :
         high += 1
-print (low,"patinets in low category, ",normal,"patients in normal category, ",high,"patients in high category")
+print (low,"patients in low category, ",normal,"patients in normal category, ",high,"patients in high category")
 category = {'low':low,'normal':normal,'high':high}
 max_category = max(category,key=category.get)
 print (max_category," contains the largest number of patients")
