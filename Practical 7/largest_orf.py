@@ -3,7 +3,6 @@ stop = {'UAA','UAG','UGA'}
 current = ''
 max_length = 0
 largest = ""
-max_length = 0
 for frame in range (3):
     i = frame
     while i <= len(seq) - 3:
