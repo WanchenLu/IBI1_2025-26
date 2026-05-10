@@ -15,9 +15,9 @@ with open('Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa', 'r') as input,\
                     out_file.write(content)
                     out_file.write(f"{sequence}\n")
                 sequence = ''
-                gene_name = re.findall (r'gene:(.+?)\s',line)
+                gene_name = re.findall (r'gene:(.+?)\s',line)[0]
             else :
-                gene_name = re.findall (r'gene:(.+?)\s',line)
+                gene_name = re.findall (r'gene:(.+?)\s',line)[0]
         else:
             line = line.strip()
             sequence += line
