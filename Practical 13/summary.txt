@@ -1,0 +1,8 @@
+1. The length and subcellular localisation of the human DLX5 protein
+length: 289
+subcellular localisation: nucleus (mainly) (specifically chromatin), cytoplasm
+
+2. The range of percentage identities in the reported online BLAST results
+
+3. The alignment score and percentage of identical amino acids for each of the three comparisons that you performed using Python
+4. A statement recording which of these two sequences are most closely related.
