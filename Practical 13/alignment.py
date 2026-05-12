@@ -32,6 +32,7 @@ def alignment(seq1,seq2,name1,name2):
         if seq1[i]==seq2[i]:
             identical +=1
             percentage = identical / len(seq1) * 100
+    print(f"{name1}: {seq1}\n{name2}: {seq2}")     
     print(f"Between {name1} and {name2}, the alignment score is {score}, and the percentage of identical amino acids is {percentage}%")
 def open_file(file):
     with open(file) as infile:
