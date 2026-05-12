@@ -3,6 +3,12 @@ length: 289
 subcellular localisation: nucleus (mainly) (specifically chromatin), cytoplasm
 
 2. The range of percentage identities in the reported online BLAST results
+83.2-100
 
 3. The alignment score and percentage of identical amino acids for each of the three comparisons that you performed using Python
-4. A statement recording which of these two sequences are most closely related.
+Between human and mouse, the alignment score is 1490, and the percentage of identical amino acids is 96.53979238754326%
+Between human and random, the alignment score is -312, and the percentage of identical amino acids is 3.4602076124567476%
+Between mouse and random, the alignment score is -325, and the percentage of identical amino acids is 3.1141868512110724
+
+4. A statement recording which of these two sequences are most closely related
+huamn_DLX5 & mouse_DLX5
